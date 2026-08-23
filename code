@@ -1,0 +1,84 @@
+# Snack Suggestion System
+# A simple python project to suggest snacks
+# Made by: Swapnil
+
+import random
+
+print("Welcome to Snack Suggestion System")
+print("------------------------------------")
+
+# taking input from user
+time = input("What time is it? (morning/afternoon/evening/night): ")
+time = time.lower()
+
+pref = input("What do you want? (veg/nonveg/sweet): ")
+pref = pref.lower()
+
+# morning snacks
+morning_veg = ["Poha", "Upma", "Paratha"]
+morning_sweet = ["Halwa", "Jalebi"]
+morning_nonveg = ["Egg Bhurji", "Boiled Eggs"]
+
+# afternoon snacks
+afternoon_veg = ["Vada Pav", "Samosa", "Dhokla"]
+afternoon_sweet = ["Gulab Jamun", "Rasgulla"]
+afternoon_nonveg = ["Chicken Roll", "Fish Fry"]
+
+# evening snacks
+evening_veg = ["Pakora", "Bhelpuri", "Kachori"]
+evening_sweet = ["Barfi", "Ladoo"]
+evening_nonveg = ["Chicken Tikka", "Egg Roll"]
+
+# night snacks
+night_veg = ["Maggi", "Sandwich", "Popcorn"]
+night_sweet = ["Ice Cream", "Chocolate"]
+night_nonveg = ["Chicken Nuggets", "Momos"]
+
+# now checking the time and preference using if else
+if time == "morning":
+    if pref == "veg":
+        snack = random.choice(morning_veg)
+    elif pref == "sweet":
+        snack = random.choice(morning_sweet)
+    elif pref == "nonveg":
+        snack = random.choice(morning_nonveg)
+    else:
+        snack = "Sorry, wrong choice"
+
+elif time == "afternoon":
+    if pref == "veg":
+        snack = random.choice(afternoon_veg)
+    elif pref == "sweet":
+        snack = random.choice(afternoon_sweet)
+    elif pref == "nonveg":
+        snack = random.choice(afternoon_nonveg)
+    else:
+        snack = "Sorry, wrong choice"
+
+elif time == "evening":
+    if pref == "veg":
+        snack = random.choice(evening_veg)
+    elif pref == "sweet":
+        snack = random.choice(evening_sweet)
+    elif pref == "nonveg":
+        snack = random.choice(evening_nonveg)
+    else:
+        snack = "Sorry, wrong choice"
+
+elif time == "night":
+    if pref == "veg":
+        snack = random.choice(night_veg)
+    elif pref == "sweet":
+        snack = random.choice(night_sweet)
+    elif pref == "nonveg":
+        snack = random.choice(night_nonveg)
+    else:
+        snack = "Sorry, wrong choice"
+
+else:
+    snack = "Sorry, wrong time entered"
+
+# printing the result
+print("\nYour suggested snack is:", snack)
+
+print("\nThank you for using this program!")
