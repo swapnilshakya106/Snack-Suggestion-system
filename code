@@ -43,7 +43,7 @@ if time == "morning":
     elif pref == "nonveg":
         snack = random.choice(morning_nonveg)
     else:
-        snack = "Sorry, wrong choice"
+        snack = "Sorry, You choose wrong item"
 
 elif time == "afternoon":
     if pref == "veg":
@@ -53,7 +53,7 @@ elif time == "afternoon":
     elif pref == "nonveg":
         snack = random.choice(afternoon_nonveg)
     else:
-        snack = "Sorry, wrong choice"
+        snack = "Sorry, You choose wrong item"
 
 elif time == "evening":
     if pref == "veg":
@@ -63,7 +63,7 @@ elif time == "evening":
     elif pref == "nonveg":
         snack = random.choice(evening_nonveg)
     else:
-        snack = "Sorry, wrong choice"
+        snack = "Sorry, You choose wrong item"
 
 elif time == "night":
     if pref == "veg":
@@ -73,7 +73,7 @@ elif time == "night":
     elif pref == "nonveg":
         snack = random.choice(night_nonveg)
     else:
-        snack = "Sorry, wrong choice"
+        snack = "Sorry, You choose wrong item"
 
 else:
     snack = "Sorry, wrong time entered"
