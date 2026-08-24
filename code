@@ -15,14 +15,14 @@ pref = input("What do you want? (veg/nonveg/sweet): ")
 pref = pref.lower()
 
 # morning snacks
-morning_veg = ["Poha", "Upma", "Paratha"]
+morning_veg = ["Poha", "Upma", "Paratha","Sandwich"]
 morning_sweet = ["Halwa", "Jalebi"]
 morning_nonveg = ["Egg Bhurji", "Boiled Eggs"]
 
 # afternoon snacks
 afternoon_veg = ["Vada Pav", "Samosa", "Dhokla"]
 afternoon_sweet = ["Gulab Jamun", "Rasgulla"]
-afternoon_nonveg = ["Chicken Roll", "Fish Fry"]
+afternoon_nonveg = ["Chicken Roll", "Fish Fry","Fish curry"]
 
 # evening snacks
 evening_veg = ["Pakora", "Bhelpuri", "Kachori"]
@@ -31,8 +31,8 @@ evening_nonveg = ["Chicken Tikka", "Egg Roll"]
 
 # night snacks
 night_veg = ["Maggi", "Sandwich", "Popcorn"]
-night_sweet = ["Ice Cream", "Chocolate"]
-night_nonveg = ["Chicken Nuggets", "Momos"]
+night_sweet = ["Ice Cream", "Chocolate","rasgulla"]
+night_nonveg = ["Chicken Nuggets", "Chicken Momos", "Chicken Kabab"]
 
 # now checking the time and preference using if else
 if time == "morning":
